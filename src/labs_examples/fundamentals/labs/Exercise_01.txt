@@ -13,7 +13,7 @@ Fundamentals Exercise 1: CLI
      8. Demonstrate removing:
          a. A file
          b. A folder
-     9. CHALLENGE:
+     9. CHALLENGE:"interesting"
          a. Use $ vim to write some text inside a file
          b. Use $ cat print contents of file
          c. Use $ grep to search for a word inside file
@@ -21,5 +21,51 @@ Fundamentals Exercise 1: CLI
 Example Output:
     1. cd ~/Documents/CodingNomads/
     2. mkdir Terminal_testing
-    3. //...
+    3. //...mkdirmk
+MacBook-Air:online-java-fundamentals scottchris$ cd ../
+MacBook-Air:labs scottchris$ cd ../
+MacBook-Air:CodingNomads scottchris$ mkdir Terminal_testing
+MacBook-Air:CodingNomads scottchris$ cd Terminal_testing
+MacBook-Air:Terminal_testing scottchris$ touch new.txt practice.txt learnings.txt
+MacBook-Air:Terminal_testing scottchris$ pwd
+/Users/scottchris/documents/CodingNomads/Terminal_testing
+MacBook-Air:Terminal_testing scottchris$ ls -al
+total 0
+drwxr-xr-x  5 scottchris  staff  160 May 21 17:17 .
+drwxr-xr-x  5 scottchris  staff  160 May 21 17:16 ..
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 learnings.txt
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 new.txt
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 practice.txt
+MacBook-Air:Terminal_testing scottchris$ mkdir Inside_testing
+MacBook-Air:Terminal_testing scottchris$ cp learnings.txt Inside_testing
+MacBook-Air:Terminal_testing scottchris$ cp new.txt Inside_testing
+MacBook-Air:Terminal_testing scottchris$ rm practice.txt
+MacBook-Air:Terminal_testing scottchris$ ls -al
+total 0
+drwxr-xr-x  5 scottchris  staff  160 May 21 17:23 .
+drwxr-xr-x  5 scottchris  staff  160 May 21 17:16 ..
+drwxr-xr-x  4 scottchris  staff  128 May 21 17:22 Inside_testing
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 learnings.txt
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 new.txt
+MacBook-Air:Terminal_testing scottchris$ rm inside_Testing
+rm: inside_Testing: is a directory
+MacBook-Air:Terminal_testing scottchris$ rm -r Inside_testing
+MacBook-Air:Terminal_testing scottchris$ ls -al
+total 0
+drwxr-xr-x  4 scottchris  staff  128 May 21 17:25 .
+drwxr-xr-x  5 scottchris  staff  160 May 21 17:16 ..
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 learnings.txt
+-rw-r--r--  1 scottchris  staff    0 May 21 17:17 new.txt
+MacBook-Air:Terminal_testing scottchris$ vim learnings.txt
+MacBook-Air:Terminal_testing scottchris$ cat learnings.txt
+Learning Java is really interesting!
+MacBook-Air:Terminal_testing scottchris$ grep "interesting" learnings.txt
+Learning Java is really interesting!
+MacBook-Air:Terminal_testing scottchris$
+
+
+
+
+
+
 
