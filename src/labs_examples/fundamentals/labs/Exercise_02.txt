@@ -32,3 +32,171 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+1) If you haven't already, please create a Github account if you have not already done so.
+
+2) Once complete, practice the following on your own machine and paste the commands you run for each step below.
+
+Initializing git folder
+    1. In CodingNomads folder, create new folder git_practice
+MacBook-Air:Coding_Nomads scottchris$ mkdir git_practice
+MacBook-Air:Coding_Nomads scottchris$
+
+    2. Inside git_practice:
+        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
+            the "git init" command within the git_practice folder.
+
+            MacBook-Air:Coding_Nomads scottchris$ cd git_practice
+       // TEST CHANGE 2025-05-25.     MacBook-Air:git_practice scottchris$ git init
+            hint: Using 'master' as the name for the initial branch. This default branch name
+            hint: is subject to change. To configure the initial branch name to use in all
+            hint: of your new repositories, which will suppress this warning, call:
+            hint:
+            hint: 	git config --global init.defaultBranch <name>
+            hint:
+            hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+            hint: 'development'. The just-created branch can be renamed via this command:
+            hint:
+            hint: 	git branch -m <name>
+            Initialized empty Git repository in /Users/scottchris/Documents/Coding_Nomads/git_practice/.git/
+            MacBook-Air:git_practice scottchris$
+
+        b. Make new file
+        Initialized empty Git repository in /Users/scottchris/Documents/Coding_Nomads/git_practice/.git/
+        MacBook-Air:git_practice scottchris$ touch new.txt
+
+        c. Add file
+
+        MacBook-Air:git_practice scottchris$ git add new.txt
+        MacBook-Air:git_practice scottchris$ git status
+        On branch master
+
+        No commits yet
+
+        Changes to be committed:
+          (use "git rm --cached <file>..." to unstage)
+        	new file:   new.txt
+
+        MacBook-Air:git_practice scottchris$
+
+
+
+
+        d. Commit file
+
+        MacBook-Air:git_practice scottchris$ git commit -m "adding new file"
+        [master (root-commit) ab950ee] adding new file
+         Committer: ScottChris <scottchris@MacBook-Air.lan>
+        Your name and email address were configured automatically based
+        on your username and hostname. Please check that they are accurate.
+        You can suppress this message by setting them explicitly. Run the
+        following command and follow the instructions in your editor to edit
+        your configuration file:
+
+            git config --global --edit
+
+        After doing this, you may fix the identity used for this commit with:
+
+            git commit --amend --reset-author
+
+         1 file changed, 0 insertions(+), 0 deletions(-)
+         create mode 100644 new.txt
+        MacBook-Air:git_practice scottchris$
+
+        c. On Github, create new git_practice repository
+
+        d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
+            git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+
+        d. Push commit file to Github
+
+        e. Practice the following git flow until you feel comfortable:
+            i.   Create or modify file
+            ii.  Add file(s)
+            iii. Commit file(s)
+            iv.  Push file(s) to Github repository
+
+            MacBook-Air:git_practice scottchris$ git push
+            fatal: The current branch master has no upstream branch.
+            To push the current branch and set the remote as upstream, use
+
+                git push --set-upstream origin master
+
+            MacBook-Air:git_practice scottchris$ git push --set-upstream origin master
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+            To github.com:scottseesw/git_practice.git
+             * [new branch]      master -> master
+            Branch 'master' set up to track remote branch 'master' from 'origin'.
+            MacBook-Air:git_practice scottchris$ touch new2.txt
+            MacBook-Air:git_practice scottchris$ git add new2.txt
+            MacBook-Air:git_practice scottchris$ git commit -m "new file 2"
+            [master ce630a6] new file 2
+             Committer: ScottChris <scottchris@MacBook-Air.lan>
+            Your name and email address were configured automatically based
+            on your username and hostname. Please check that they are accurate.
+            You can suppress this message by setting them explicitly. Run the
+            following command and follow the instructions in your editor to edit
+            your configuration file:
+
+                git config --global --edit
+
+            After doing this, you may fix the identity used for this commit with:
+
+                git commit --amend --reset-author
+
+             1 file changed, 0 insertions(+), 0 deletions(-)
+             create mode 100644 new2.txt
+            MacBook-Air:git_practice scottchris$ git push
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Delta compression using up to 8 threads
+            Compressing objects: 100% (2/2), done.
+            Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+            Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+            To github.com:scottseesw/git_practice.git
+               ab950ee..ce630a6  master -> master
+            MacBook-Air:git_practice scottchris$
+
+Adding a remote
+    1. Create new personal repository on Github named "git_practice_2".
+    2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
+        (directions are provided on Github with new repo is created)
+    3. Push local git repository to your Github using the new remote.
+
+    MacBook-Air:git_practice scottchris$ git remote add git@github.com:scottseesw/git_practice_2.git
+    usage: git remote add [<options>] <name> <url>
+
+        -f, --fetch           fetch the remote branches
+        --tags                import all tags and associated objects when fetching
+                              or do not fetch any tag at all (--no-tags)
+        -t, --track <branch>  branch(es) to track
+        -m, --master <branch>
+                              master branch
+        --mirror[=(push|fetch)]
+                              set up remote as a mirror to push to or fetch from
+
+    MacBook-Air:git_practice scottchris$ git commit -m "new practice 2"
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+    MacBook-Air:git_practice scottchris$ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+    Everything up-to-date
+    MacBook-Air:git_practice scottchris$
+
+
+Cloning repository from Github
+    1. Find a repository on Github
+    2. Clone repository to local machine
+    3. Create new repository on Github
+    4. Add new remote on local machine
+    5. Push to new Github repository
+//Scott's Exercise 2 saved via NANO
+
+
