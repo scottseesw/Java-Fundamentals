@@ -16,6 +16,23 @@ public class Exercise_04 {
         System.out.println("int i is: " + i);
 
         // write your code below
+        boolean red = true;
+        System.out.println("boolean red is: " + true);
+
+        short w = 2000;
+        System.out.println("short w is " + w);
+
+        long  a = 306666;
+        System.out.println("long a is " + a);
+
+        float value = 193388833;
+        System.out.println("short value is " + value);
+
+        double n = 3.5;
+        System.out.println("double number is " + n);
+
+        char green = 'g';
+        System.out.println("green is " + green);
 
     }
 
