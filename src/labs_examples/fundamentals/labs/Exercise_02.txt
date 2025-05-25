@@ -289,7 +289,7 @@ remote: Resolving deltas: 100% (53/53), done.
 To github.com:scottseesw/Car_Inventory2.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
-scottchris@MacBook-Air Car_Inventory % 
+scottchris@MacBook-Air Car_Inventory %
 
 
 //Scott's Exercise 2 saved via NANO
