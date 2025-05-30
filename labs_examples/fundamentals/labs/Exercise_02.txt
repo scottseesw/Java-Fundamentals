@@ -1,0 +1,297 @@
+1) If you haven't already, please create a Github account if you have not already done so.
+
+2) Once complete, practice the following on your own machine and paste the commands you run for each step below.
+
+Initializing git folder
+    1. In CodingNomads folder, create new folder git_practice
+    2. Inside git_practice:
+        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
+            the "git init" command within the git_practice folder.
+        b. Make new file
+        c. Add file
+        d. Commit file
+        c. On Github, create new git_practice repository
+        d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
+            git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+        d. Push commit file to Github
+        e. Practice the following git flow until you feel comfortable:
+            i.   Create or modify file
+            ii.  Add file(s)
+            iii. Commit file(s)
+            iv.  Push file(s) to Github repository
+
+Adding a remote
+    1. Create new personal repository on Github named "git_practice_2".
+    2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
+        (directions are provided on Github with new repo is created)
+    3. Push local git repository to your Github using the new remote.
+
+Cloning repository from Github
+    1. Find a repository on Github
+    2. Clone repository to local machine
+    3. Create new repository on Github
+    4. Add new remote on local machine
+    5. Push to new Github repository
+1) If you haven't already, please create a Github account if you have not already done so.
+
+2) Once complete, practice the following on your own machine and paste the commands you run for each step below.
+
+Initializing git folder
+    1. In CodingNomads folder, create new folder git_practice
+MacBook-Air:Coding_Nomads scottchris$ mkdir git_practice
+MacBook-Air:Coding_Nomads scottchris$
+
+    2. Inside git_practice:
+        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
+            the "git init" command within the git_practice folder.
+
+            MacBook-Air:Coding_Nomads scottchris$ cd git_practice
+       // TEST CHANGE 2025-05-25.     MacBook-Air:git_practice scottchris$ git init
+            hint: Using 'master' as the name for the initial branch. This default branch name
+            hint: is subject to change. To configure the initial branch name to use in all
+            hint: of your new repositories, which will suppress this warning, call:
+            hint:
+            hint: 	git config --global init.defaultBranch <name>
+            hint:
+            hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+            hint: 'development'. The just-created branch can be renamed via this command:
+            hint:
+            hint: 	git branch -m <name>
+            Initialized empty Git repository in /Users/scottchris/Documents/Coding_Nomads/git_practice/.git/
+            MacBook-Air:git_practice scottchris$
+
+        b. Make new file
+        Initialized empty Git repository in /Users/scottchris/Documents/Coding_Nomads/git_practice/.git/
+        MacBook-Air:git_practice scottchris$ touch new.txt
+
+        c. Add file
+
+        MacBook-Air:git_practice scottchris$ git add new.txt
+        MacBook-Air:git_practice scottchris$ git status
+        On branch master
+
+        No commits yet
+
+        Changes to be committed:
+          (use "git rm --cached <file>..." to unstage)
+        	new file:   new.txt
+
+        MacBook-Air:git_practice scottchris$
+
+
+
+
+        d. Commit file
+
+        MacBook-Air:git_practice scottchris$ git commit -m "adding new file"
+        [master (root-commit) ab950ee] adding new file
+         Committer: ScottChris <scottchris@MacBook-Air.lan>
+        Your name and email address were configured automatically based
+        on your username and hostname. Please check that they are accurate.
+        You can suppress this message by setting them explicitly. Run the
+        following command and follow the instructions in your editor to edit
+        your configuration file:
+
+            git config --global --edit
+
+        After doing this, you may fix the identity used for this commit with:
+
+            git commit --amend --reset-author
+
+         1 file changed, 0 insertions(+), 0 deletions(-)
+         create mode 100644 new.txt
+        MacBook-Air:git_practice scottchris$
+
+        c. On Github, create new git_practice repository
+
+        d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
+            git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+
+        d. Push commit file to Github
+
+        e. Practice the following git flow until you feel comfortable:
+            i.   Create or modify file
+            ii.  Add file(s)
+            iii. Commit file(s)
+            iv.  Push file(s) to Github repository
+
+            MacBook-Air:git_practice scottchris$ git push
+            fatal: The current branch master has no upstream branch.
+            To push the current branch and set the remote as upstream, use
+
+                git push --set-upstream origin master
+
+            MacBook-Air:git_practice scottchris$ git push --set-upstream origin master
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+            To github.com:scottseesw/git_practice.git
+             * [new branch]      master -> master
+            Branch 'master' set up to track remote branch 'master' from 'origin'.
+            MacBook-Air:git_practice scottchris$ touch new2.txt
+            MacBook-Air:git_practice scottchris$ git add new2.txt
+            MacBook-Air:git_practice scottchris$ git commit -m "new file 2"
+            [master ce630a6] new file 2
+             Committer: ScottChris <scottchris@MacBook-Air.lan>
+            Your name and email address were configured automatically based
+            on your username and hostname. Please check that they are accurate.
+            You can suppress this message by setting them explicitly. Run the
+            following command and follow the instructions in your editor to edit
+            your configuration file:
+
+                git config --global --edit
+
+            After doing this, you may fix the identity used for this commit with:
+
+                git commit --amend --reset-author
+
+             1 file changed, 0 insertions(+), 0 deletions(-)
+             create mode 100644 new2.txt
+            MacBook-Air:git_practice scottchris$ git push
+            Enumerating objects: 3, done.
+            Counting objects: 100% (3/3), done.
+            Delta compression using up to 8 threads
+            Compressing objects: 100% (2/2), done.
+            Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+            Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+            To github.com:scottseesw/git_practice.git
+               ab950ee..ce630a6  master -> master
+            MacBook-Air:git_practice scottchris$
+
+Adding a remote
+    1. Create new personal repository on Github named "git_practice_2".
+    2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
+        (directions are provided on Github with new repo is created)
+    3. Push local git repository to your Github using the new remote.
+
+    MacBook-Air:git_practice scottchris$ git remote add git@github.com:scottseesw/git_practice_2.git
+    usage: git remote add [<options>] <name> <url>
+
+        -f, --fetch           fetch the remote branches
+        --tags                import all tags and associated objects when fetching
+                              or do not fetch any tag at all (--no-tags)
+        -t, --track <branch>  branch(es) to track
+        -m, --master <branch>
+                              master branch
+        --mirror[=(push|fetch)]
+                              set up remote as a mirror to push to or fetch from
+
+    MacBook-Air:git_practice scottchris$ git commit -m "new practice 2"
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+    MacBook-Air:git_practice scottchris$ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    nothing to commit, working tree clean
+    Everything up-to-date
+    MacBook-Air:git_practice scottchris$
+
+
+Cloning repository from Github
+    1. Find a repository on Github
+    2. Clone repository to local machine
+    3. Create new repository on Github
+    4. Add new remote on local machine
+    5. Push to new Github repository
+
+
+scottchris@MacBook-Air ~ % clear
+
+scottchris@MacBook-Air ~ % cd Java_Fundamentals
+cd: no such file or directory: Java_Fundamentals
+scottchris@MacBook-Air ~ % cd Coding_Nomads
+cd: no such file or directory: Coding_Nomads
+scottchris@MacBook-Air ~ % ../
+zsh: permission denied: ../
+scottchris@MacBook-Air ~ % ls -al
+total 120
+drwxr-xr-x+ 35 scottchris  staff   1120 May 25 12:34 .
+drwxr-xr-x   6 root        admin    192 May 24  2024 ..
+-r--------   1 scottchris  staff      7 May  6 18:53 .CFUserTextEncoding
+-rw-r--r--@  1 scottchris  staff  20484 May 25 12:57 .DS_Store
+drwx------+  2 scottchris  staff     64 May 25 12:06 .Trash
+drwxr-xr-x@  6 scottchris  staff    192 May  6 18:19 .atom
+-rw-------@  1 scottchris  staff   2989 May 25 09:52 .bash_history
+drwx------  13 scottchris  staff    416 May 16 16:11 .bash_sessions
+drwxr-xr-x  14 scottchris  staff    448 May 25 09:52 .git
+-rw-------   1 scottchris  staff     20 May 21 18:47 .lesshst
+drwxr-xr-x   3 scottchris  staff     96 May  7 05:46 .oracle_jre_usage
+drwx------   6 scottchris  staff    192 May 15 19:16 .ssh
+-rw-------   1 scottchris  staff  12759 May 25 12:34 .viminfo
+drwxr-xr-x   5 scottchris  staff    160 May  6 18:55 .vscode
+drwx------   3 scottchris  staff     96 May 25 09:41 .zsh_sessions
+-rw-r--r--   1 scottchris  staff     39 May 15 19:44 .zshrc
+drwx------@ 10 scottchris  staff    320 May 25 13:59 Desktop
+drwx------@  6 scottchris  staff    192 May 22 05:28 Documents
+drwx------@  9 scottchris  staff    288 May 25 12:13 Downloads
+drwxr-xr-x  11 scottchris  staff    352 May 25 13:52 Java-Fundamentals
+drwx------@ 87 scottchris  staff   2784 May 16 17:14 Library
+drwx------+  3 scottchris  staff     96 May  6 18:44 Movies
+drwx------+  3 scottchris  staff     96 May  6 18:40 Music
+drwx------+  3 scottchris  staff     96 May  6 18:35 Pictures
+drwxr-xr-x+  3 scottchris  staff     96 May  6 18:20 Public
+drwxr-xr-x@  3 scottchris  staff     96 Jun  4  2023 PycharmProjects
+drwxr-xr-x+  2 scottchris  staff     64 May  6 18:20 Sites
+drwxr-xr-x   4 scottchris  staff    128 May  6 18:20 anaconda3
+drwxr-xr-x   6 scottchris  staff    192 May  6 18:26 dealership
+drwxr-xr-x   4 scottchris  staff    128 May  6 18:20 dev
+-rw-r--r--@  1 scottchris  staff      7 May 16 16:16 example.txt
+drwxr-xr-x@  7 scottchris  staff    224 May 23 06:14 java
+drwxr-xr-x   3 scottchris  staff     96 May 25 11:42 online-java-fundamentals
+drwxr-xr-x   9 scottchris  staff    288 Aug 17  2023 pokegame
+drwxr-xr-x   4 scottchris  staff    128 May  6 18:04 scottseesw
+scottchris@MacBook-Air ~ % cd Java-Fundamentals
+scottchris@MacBook-Air Java-Fundamentals % git clone git@github.com:scottseesw/Car_Inventory.git
+Cloning into 'Car_Inventory'...
+remote: Enumerating objects: 979, done.
+remote: Counting objects: 100% (979/979), done.
+remote: Compressing objects: 100% (900/900), done.
+remote: Total 979 (delta 53), reused 979 (delta 53), pack-reused 0 (from 0)
+Receiving objects: 100% (979/979), 2.97 MiB | 8.92 MiB/s, done.
+Resolving deltas: 100% (53/53), done.
+scottchris@MacBook-Air Java-Fundamentals % ls -al
+total 40
+drwxr-xr-x  12 scottchris  staff   384 May 25 16:08 .
+drwxr-xr-x+ 35 scottchris  staff  1120 May 25 12:34 ..
+-rw-r--r--@  1 scottchris  staff  6148 May 23 06:14 .DS_Store
+drwxr-xr-x  14 scottchris  staff   448 May 25 12:34 .git
+-rwxr-xr-x   1 scottchris  staff    17 May 21 17:49 .gitignore
+drwxr-xr-x   8 scottchris  staff   256 May 25 15:58 .idea
+drwxr-xr-x   6 scottchris  staff   192 May 25 16:08 Car_Inventory
+-rw-r--r--@  1 scottchris  staff   423 May 22 18:43 Java-Fundamentals.iml
+-rwxr-xr-x   1 scottchris  staff  2101 May 21 17:49 README.md
+drwxr-xr-x   3 scottchris  staff    96 May 25 13:52 out
+drwxr-xr-x   5 scottchris  staff   160 May 21 17:49 src
+drwxr-xr-x   7 scottchris  staff   224 May 23 06:20 untitled
+scottchris@MacBook-Air Java-Fundamentals % cd Car_Inventory
+scottchris@MacBook-Air Car_Inventory % git remote -v
+origin	git@github.com:scottseesw/Car_Inventory.git (fetch)
+origin	git@github.com:scottseesw/Car_Inventory.git (push)
+scottchris@MacBook-Air Car_Inventory % git remote rename origin upstream
+scottchris@MacBook-Air Car_Inventory % git remote add origin git@github.com:scottseesw/Car_Inventory2.git
+scottchris@MacBook-Air Car_Inventory % git remote -v
+origin	git@github.com:scottseesw/Car_Inventory2.git (fetch)
+origin	git@github.com:scottseesw/Car_Inventory2.git (push)
+upstream	git@github.com:scottseesw/Car_Inventory.git (fetch)
+upstream	git@github.com:scottseesw/Car_Inventory.git (push)
+scottchris@MacBook-Air Car_Inventory % git push -u origin main
+Enumerating objects: 979, done.
+Counting objects: 100% (979/979), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (900/900), done.
+Writing objects: 100% (979/979), 2.97 MiB | 3.85 MiB/s, done.
+Total 979 (delta 53), reused 979 (delta 53), pack-reused 0
+remote: Resolving deltas: 100% (53/53), done.
+To github.com:scottseesw/Car_Inventory2.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+scottchris@MacBook-Air Car_Inventory %
+
+
+//Scott's Exercise 2 saved via NANO
+
+
