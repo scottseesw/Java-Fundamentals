@@ -1,25 +1,3 @@
-# Java bytecode and generated files
-*.class
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-/out/
-/target/
-/build/
-
-# IntelliJ IDEA files
-.idea/
+.idea
+out/
 *.iml
-*.ipr
-*.iws
-
-# macOS system files
-.DS_Store
-.Trashes/
-Thumbs.db
-
-# Log files
-*.log
-*.log.*
