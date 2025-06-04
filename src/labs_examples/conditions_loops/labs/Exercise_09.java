@@ -8,4 +8,15 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_09 {
-}
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i ++ ) {
+            System.out.println(i);
+            if (i == 5) {
+                break;
+            }
+
+        }
+        System.out.println("Loop ended due to a break!");
+    }
+    }
+
